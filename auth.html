@@ -1,0 +1,10 @@
+<!-- auth.html -->
+<script>
+  const clientId = "527bc50d121141e2b7b6e27336211312";  // replace this
+  const redirectUri = "https://prajgaikwad.github.io/vivi30/index.html";
+  const scope = "user-read-private user-read-email";
+
+  const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scope)}`;
+
+  window.location.href = authUrl;
+</script>
